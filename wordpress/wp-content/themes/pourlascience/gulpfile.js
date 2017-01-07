@@ -139,5 +139,5 @@ gulp.task('watch', function() {
 
 // Run styles, site-js and foundation-js
 gulp.task('default', function() {
-  gulp.start('watch','browsersync','styles', 'site-js', 'foundation-js');
+  gulp.start('styles', 'site-js', 'foundation-js');
 });

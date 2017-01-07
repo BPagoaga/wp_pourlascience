@@ -56,8 +56,6 @@
 						<section class="brandname text-center"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></section>
 					<?php endif ?>
 					
-					<!-- This navs will be applied to the topbar, above all content 
-						  To see additional nav styles, visit the /parts directory -->
 					<?php get_template_part( 'parts/nav', '' ); ?>
 	 	
 				</header> <!-- end .header -->

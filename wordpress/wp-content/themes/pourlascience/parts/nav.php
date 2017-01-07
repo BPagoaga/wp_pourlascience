@@ -1,3 +1,3 @@
-<div class="top-bar" id="main-menu">
-menu
-</div>
+<nav role="navigation">
+	<?php custom_menu(); ?>
+</nav>
