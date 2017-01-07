@@ -4364,6 +4364,12 @@ HEADER STYLES
 .header ul.off-canvas-list li {
   list-style: none; }
 
+.header figure {
+  height: 300px;
+  overflow: hidden; }
+  .header figure img {
+    transform: translateY(-35%); }
+
 /*********************
 NAVIGATION STYLES
 *********************/

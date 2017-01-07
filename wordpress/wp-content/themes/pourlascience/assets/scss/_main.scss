@@ -58,6 +58,15 @@ HEADER STYLES
 	ul.off-canvas-list li {
 		list-style: none;
 	}
+
+	figure {
+		height: 300px;
+		overflow: hidden;
+
+		img {
+			transform: translateY(-35%);
+		}
+	}
 }
     
 /*********************
