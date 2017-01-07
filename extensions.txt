@@ -1,0 +1,6 @@
+ACF
+Askimet
+Contact Form 7
+Custom Post Type UI
+W3 Total Cache
+Yoast SEO
