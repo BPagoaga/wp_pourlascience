@@ -4389,6 +4389,10 @@ NAVIGATION STYLES
   .off-canvas-list ul .dropdown {
     margin-left: 20px; }
 
+nav {
+  display: -ms-flexbox;
+  display: flex; }
+
 .menu {
   background-color: #5473ae; }
   .menu .active > a {

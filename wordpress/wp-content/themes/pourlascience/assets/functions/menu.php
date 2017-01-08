@@ -4,7 +4,8 @@ register_nav_menus(
 	array(
 		'main-nav' => __( 'The Main Menu', 'jointswp' ),   // Main nav in header
 		'footer-links' => __( 'Footer Links', 'jointswp' ), // Secondary nav in footer
-        'primary-menu' => __( 'Primary Menu', 'pourlascience' )
+        'primary-menu' => __( 'Primary Menu', 'pourlascience' ),
+        'links-menu' => __('Links Menu', 'pourlascience')
 	)
 );
 
@@ -21,14 +22,27 @@ function joints_top_nav() {
     ));
 } 
 
-// My menu
-function custom_menu() {
+// Primary Menu
+function primary_menu() {
     wp_nav_menu(array(
         'container' => true,
         'menu' => __( 'Primary Menu', 'pourlascience'),
         'menu_class' => 'menu',
         'items_wrap' => '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown">%3$s</ul>',
         'theme_location' => 'primary-menu',                 // Where it's located in the theme
+        'depth' => 5,                                   // Limit the depth of the nav
+        'fallback_cb' => false,                         // Fallback function (see below)
+        'walker' => new Topbar_Menu_Walker()));
+}
+
+// External Links Menu
+function links_menu() {
+    wp_nav_menu(array(
+        'container' => true,
+        'menu' => __( 'Links Menu', 'pourlascience'),
+        'menu_class' => 'menu',
+        'items_wrap' => '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown">%3$s</ul>',
+        'theme_location' => 'links-menu',                 // Where it's located in the theme
         'depth' => 5,                                   // Limit the depth of the nav
         'fallback_cb' => false,                         // Fallback function (see below)
         'walker' => new Topbar_Menu_Walker()));

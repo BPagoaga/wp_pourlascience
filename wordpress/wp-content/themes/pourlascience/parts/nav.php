@@ -1,3 +1,7 @@
 <nav role="navigation">
-	<?php custom_menu(); ?>
+	
+	<?php primary_menu(); ?>
+
+	<?php links_menu(); ?>	
+	
 </nav>
