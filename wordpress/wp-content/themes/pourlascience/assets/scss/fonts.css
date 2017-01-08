@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'Handlee';
+	src: url(../fonts/Handlee/Handlee-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Signika';
+	src: url(../fonts/Signika/Signika-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'SignikaBold';
+	src: url(../fonts/Signika/Signika-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'SignikaLight';
+	src: url(../fonts/Signika/Signika-Light.ttf);
+}
+
+@font-face {
+	font-family: 'SignikaSemiBold';
+	src: url(../fonts/Signika/Signika-Semibold.ttf);
+}
+
+@font-face {
+	font-family: 'SignikaNegative';
+	src: url(../fonts/Signika_Negative/SignikaNegative-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'SignikaNegativeBold';
+	src: url(../fonts/Signika_Negative/SignikaNegative-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'SignikaNegativeLight';
+	src: url(../fonts/Signika_Negative/SignikaNegative-Light.ttf);
+}
+
+@font-face {
+	font-family: 'SignikaNegativeSemiBold';
+	src: url(../fonts/Signika_Negative/SignikaNegative-Semibold.ttf);
+}

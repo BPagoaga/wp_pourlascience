@@ -936,8 +936,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #fefefe;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  background: #f1f4fc;
+  font-family: "SignikaNegative", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -1802,10 +1802,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Handlee", sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: inherit;
+  color: #5473ae;
   text-rendering: optimizeLegibility; }
   h1 small,
   h2 small,
@@ -2238,7 +2238,7 @@ legend {
     margin: 0;
     margin-left: -0.1875rem;
     padding: 0 0.1875rem;
-    background: #fefefe; }
+    background: #f1f4fc; }
 
 select {
   height: 2.4375rem;
@@ -2979,7 +2979,7 @@ select {
   visibility: hidden;
   border: 1px solid #cacaca;
   border-radius: 0;
-  background-color: #fefefe;
+  background-color: #f1f4fc;
   font-size: 1rem; }
   .dropdown-pane.is-open {
     visibility: visible; }
@@ -4346,6 +4346,9 @@ Stylesheet: Main Stylesheet
 /*********************
 GENERAL STYLES
 *********************/
+p {
+  color: #5473ae; }
+
 /*********************
 LINK STYLES
 *********************/
@@ -4356,7 +4359,10 @@ a:link, a:visited:link {
 H1, H2, H3, H4, H5 P STYLES
 *********************/
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #5473ae; }
+  h1 a:hover, .h1 a:hover, h2 a:hover, .h2 a:hover, h3 a:hover, .h3 a:hover, h4 a:hover, .h4 a:hover, h5 a:hover, .h5 a:hover {
+    color: inherit; }
 
 /*********************
 HEADER STYLES
@@ -4382,6 +4388,22 @@ NAVIGATION STYLES
     border-bottom: 0px; }
   .off-canvas-list ul .dropdown {
     margin-left: 20px; }
+
+.menu {
+  background-color: #5473ae; }
+  .menu .active > a {
+    background-color: #f1f4fc;
+    color: #5473ae; }
+
+.menu-item {
+  background-color: #5473ae; }
+  .menu-item:hover {
+    background-color: #f1f4fc; }
+  .menu-item a {
+    color: #f1f4fc;
+    font-family: "Handlee", sans-serif; }
+    .menu-item a:hover {
+      color: #5473ae; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -4701,3 +4723,39 @@ to display none.
   .respond-form,
   nav {
     display: none; } }
+
+@font-face {
+  font-family: 'Handlee';
+  src: url(../fonts/Handlee/Handlee-Regular.ttf); }
+
+@font-face {
+  font-family: 'Signika';
+  src: url(../fonts/Signika/Signika-Regular.ttf); }
+
+@font-face {
+  font-family: 'SignikaBold';
+  src: url(../fonts/Signika/Signika-Bold.ttf); }
+
+@font-face {
+  font-family: 'SignikaLight';
+  src: url(../fonts/Signika/Signika-Light.ttf); }
+
+@font-face {
+  font-family: 'SignikaSemiBold';
+  src: url(../fonts/Signika/Signika-Semibold.ttf); }
+
+@font-face {
+  font-family: 'SignikaNegative';
+  src: url(../fonts/Signika_Negative/SignikaNegative-Regular.ttf); }
+
+@font-face {
+  font-family: 'SignikaNegativeBold';
+  src: url(../fonts/Signika_Negative/SignikaNegative-Bold.ttf); }
+
+@font-face {
+  font-family: 'SignikaNegativeLight';
+  src: url(../fonts/Signika_Negative/SignikaNegative-Light.ttf); }
+
+@font-face {
+  font-family: 'SignikaNegativeSemiBold';
+  src: url(../fonts/Signika_Negative/SignikaNegative-Semibold.ttf); }

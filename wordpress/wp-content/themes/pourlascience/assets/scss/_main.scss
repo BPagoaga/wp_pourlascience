@@ -7,6 +7,9 @@ Stylesheet: Main Stylesheet
 /*********************
 GENERAL STYLES
 *********************/
+p {
+	color: $paragraph-font-color;
+}
 
 /*********************
 LINK STYLES
@@ -28,6 +31,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	// Removing text decoration from all headline links
 	a {
 		text-decoration: none;
+		color: $header-color;
+
+		&:hover {
+			color: inherit;
+		}
 	}
 }
 
@@ -88,6 +96,34 @@ NAVIGATION STYLES
 		}
 		.dropdown {
 			margin-left: 20px;
+		}
+	}
+}
+
+.menu {
+	background-color: $background-color;
+
+	.active {
+		&>a {
+			background-color: $menu-item-bcg__hover;
+			color: $menu-item-color__hover;
+		}
+	}
+}
+
+.menu-item {
+	background-color: $menu-item-bcg;
+
+	&:hover {
+		background-color: $menu-item-bcg__hover;
+	}
+
+	a {
+		color: $menu-item-color;
+		font-family: $menu-item-ff;
+
+		&:hover {
+			color: $menu-item-color__hover;
 		}
 	}
 }
