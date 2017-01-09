@@ -9,6 +9,7 @@ GENERAL STYLES
 *********************/
 p {
 	color: $paragraph-font-color;
+	font-size: 0.875em;
 }
 
 /*********************
@@ -26,7 +27,8 @@ a, a:visited {
 /*********************
 H1, H2, H3, H4, H5 P STYLES
 *********************/
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, 
+.brandname {
 
 	// Removing text decoration from all headline links
 	a {
@@ -40,11 +42,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-
+	font-size: 2.25rem;
+	margin-top: 1.25rem;
 }
 
 h2, .h2 {
-
+	text-align: center;
+	font-size: 1.875em;
+	margin-top: 0.75rem;
 }
 
 h3, .h3 {
@@ -76,6 +81,14 @@ HEADER STYLES
 		}
 	}
 }
+
+.brandname {
+	font-size: 3.75rem;
+	padding: 15px 0;
+	font-family: 'Handlee', sans-serif;
+	color: $header-color;
+	min-width: 100%;
+}
     
 /*********************
 NAVIGATION STYLES
@@ -100,15 +113,14 @@ NAVIGATION STYLES
 	}
 }
 
-nav {
-	display: flex;
+.nav {
+	background-color: $background-color;
 }
 
 .menu {
-	background-color: $background-color;
 
 	.active {
-		&>a {
+		a {
 			background-color: $menu-item-bcg__hover;
 			color: $menu-item-color__hover;
 		}
@@ -118,16 +130,29 @@ nav {
 .menu-item {
 	background-color: $menu-item-bcg;
 
-	&:hover {
-		background-color: $menu-item-bcg__hover;
-	}
-
-	a {
+	&>a {
 		color: $menu-item-color;
 		font-family: $menu-item-ff;
+		font-size: 1.875rem;
 
-		&:hover {
+		&:hover,
+		&:active {
 			color: $menu-item-color__hover;
+			background-color: $menu-item-bcg__hover;
+		}
+	}
+
+	&.is-active {
+		&>a {
+			color: $menu-item-color__hover;
+			background-color: $menu-item-bcg__hover;
+		}
+	}
+
+	.is-submenu-item {
+
+		a {
+			font-size: 1rem;
 		}
 	}
 }

@@ -49,12 +49,7 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-img.jpg">
 					</figure>
 					
-					<?php //if is homepage =>h1
-					if (is_front_page()) : ?>
-					 	<h1 class="brandname text-center"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>	
-					<?php else : ?>
-						<section class="brandname text-center"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></section>
-					<?php endif ?>
+					<section class="brandname text-center"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></section>
 					
 					<?php get_template_part( 'parts/nav', '' ); ?>
 	 	
