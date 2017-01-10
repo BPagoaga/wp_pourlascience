@@ -16,11 +16,15 @@ p {
 LINK STYLES
 *********************/
 a, a:visited {
-
+	color: $link-color;
 	// Mobile tap color
 	&:link {
 		//Highlight links on iOS, Similar to :hover for mobile devices.
 		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+	}
+
+	&:hover {
+		color: $body-font-color;
 	}
 }
 
@@ -127,6 +131,37 @@ NAVIGATION STYLES
 	}
 }
 
+#menu-links {
+	li {
+		display: inline-block;
+		min-width: 100%;
+
+		a {
+			&::after {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.dropdown.menu {
+	&> li.is-dropdown-submenu-parent {
+		&> a {
+			&::after {
+				border-top-color: $body-background;
+			}
+		}
+
+		&:hover {
+			&> a {
+				&::after {
+					border-top-color: $body-font-color;
+				}
+			}
+		}
+	}
+}
+
 .menu-item {
 	background-color: $menu-item-bcg;
 
@@ -181,6 +216,18 @@ POSTS & CONTENT STYLES
 	.vcard {
 		border: 0px;
 		padding: 0px;
+	}
+}
+
+// Posts into the loop
+.post {
+	margin-top: 1.25rem;
+	border-top: 1px dashed;
+
+	h1,
+	h2 {
+		text-align: left;
+		font-size: 1.875em;
 	}
 }
 
@@ -541,6 +588,9 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 .sidebar {
+	h4 {
+		margin-top: 1.75rem;
+	}
 }
 
 #searchsubmit {

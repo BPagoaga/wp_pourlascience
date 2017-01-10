@@ -940,7 +940,7 @@ body {
   font-family: "SignikaNegative", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
-  color: #0a0a0a;
+  color: #5473ae;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -1938,7 +1938,7 @@ cite {
 
 abbr {
   border-bottom: 1px dotted #0a0a0a;
-  color: #0a0a0a;
+  color: #5473ae;
   cursor: help; }
 
 figure {
@@ -2506,7 +2506,7 @@ select {
   border: 1px solid #e6e6e6;
   border-bottom: 0;
   background-color: #fefefe;
-  color: #0a0a0a; }
+  color: #5473ae; }
   :last-child > .accordion-content:last-child {
     border-bottom: 1px solid #e6e6e6; }
 
@@ -2695,26 +2695,26 @@ select {
   border: 1px solid rgba(10, 10, 10, 0.25);
   border-radius: 0;
   background-color: white;
-  color: #0a0a0a; }
+  color: #5473ae; }
   .callout > :first-child {
     margin-top: 0; }
   .callout > :last-child {
     margin-bottom: 0; }
   .callout.primary {
     background-color: #d7ecfa;
-    color: #0a0a0a; }
+    color: #5473ae; }
   .callout.secondary {
     background-color: #eaeaea;
-    color: #0a0a0a; }
+    color: #5473ae; }
   .callout.success {
     background-color: #e1faea;
-    color: #0a0a0a; }
+    color: #5473ae; }
   .callout.warning {
     background-color: #fff3d9;
-    color: #0a0a0a; }
+    color: #5473ae; }
   .callout.alert {
     background-color: #f7e4e1;
-    color: #0a0a0a; }
+    color: #5473ae; }
   .callout.small {
     padding-top: 0.5rem;
     padding-right: 0.5rem;
@@ -2733,7 +2733,7 @@ select {
   background: #fefefe;
   box-shadow: none;
   overflow: hidden;
-  color: #0a0a0a; }
+  color: #5473ae; }
   .card > :last-child {
     margin-bottom: 0; }
 
@@ -3965,10 +3965,10 @@ table {
     font-weight: bold; }
   table thead {
     background: #f8f8f8;
-    color: #0a0a0a; }
+    color: #5473ae; }
   table tfoot {
     background: #f1f1f1;
-    color: #0a0a0a; }
+    color: #5473ae; }
   table thead tr,
   table tfoot tr {
     background: transparent; }
@@ -4073,7 +4073,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   border: 1px solid #e6e6e6;
   border-top: 0;
   background: #fefefe;
-  color: #0a0a0a;
+  color: #5473ae;
   transition: all 0.5s ease; }
 
 .tabs-content.vertical {
@@ -4361,8 +4361,12 @@ p {
 /*********************
 LINK STYLES
 *********************/
-a:link, a:visited:link {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+a, a:visited {
+  color: rgba(84, 115, 174, 0.7); }
+  a:link, a:visited:link {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+  a:hover, a:visited:hover {
+    color: #5473ae; }
 
 /*********************
 H1, H2, H3, H4, H5 P STYLES
@@ -4423,6 +4427,18 @@ NAVIGATION STYLES
   background-color: #f1f4fc;
   color: #5473ae; }
 
+#menu-links li {
+  display: inline-block;
+  min-width: 100%; }
+  #menu-links li a::after {
+    margin-right: 10px; }
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  border-top-color: #f1f4fc; }
+
+.dropdown.menu > li.is-dropdown-submenu-parent:hover > a::after {
+  border-top-color: #5473ae; }
+
 .menu-item {
   background-color: #5473ae; }
   .menu-item > a {
@@ -4447,6 +4463,14 @@ POSTS & CONTENT STYLES
 .page-title .vcard {
   border: 0px;
   padding: 0px; }
+
+.post {
+  margin-top: 1.25rem;
+  border-top: 1px dashed; }
+  .post h1,
+  .post h2 {
+    text-align: left;
+    font-size: 1.875em; }
 
 .byline {
   color: #999; }
@@ -4642,6 +4666,9 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
+.sidebar h4 {
+  margin-top: 1.75rem; }
+
 .widget ul {
   margin: 0; }
   .widget ul li {

@@ -4,7 +4,9 @@
 	
 		<div id="inner-content" class="row">
 	
-		    <main id="main" class="large-8 medium-8 columns" role="main">
+		    <main id="main" class="large-8 medium-8 columns row" role="main">
+
+		    	<h1>Les articles de la râterie Pour La Science</h1>
 		    
 			    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			 
