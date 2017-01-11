@@ -27,7 +27,7 @@ function primary_menu() {
     wp_nav_menu(array(
         'container' => true,
         'menu' => __( 'Primary Menu', 'pourlascience'),
-        'menu_class' => 'menu',
+        'menu_class' => 'vertical medium-horizontal menu',
         'items_wrap' => '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown">%3$s</ul>',
         'theme_location' => 'primary-menu',                 // Where it's located in the theme
         'depth' => 5,                                   // Limit the depth of the nav

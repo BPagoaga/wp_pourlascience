@@ -144,7 +144,8 @@ NAVIGATION STYLES
 	}
 }
 
-.dropdown.menu {
+.dropdown.menu,
+.dropdown.menu.medium-horizontal {
 	&> li.is-dropdown-submenu-parent {
 		&> a {
 			&::after {
@@ -168,7 +169,7 @@ NAVIGATION STYLES
 	&>a {
 		color: $menu-item-color;
 		font-family: $menu-item-ff;
-		font-size: 1.875rem;
+		font-size: 1.5rem;
 
 		&:hover,
 		&:active {
@@ -624,6 +625,14 @@ FOOTER STYLES
 .footer {
 	clear: both;
 	margin-top: 1em;
+
+	#inner-footer {
+		border-top: 1px solid;
+
+		p {
+			margin-top: 1rem;
+		}
+	}
 }
 	
 /*********************
@@ -637,4 +646,58 @@ PLUGIN STYLES
 .gform_body ul {
     list-style: none outside none;
     margin: 0;
+}
+
+@include respond-to(medium) {
+
+	figure {
+		display: none;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+
+	.title-bar {
+		background-color: $body-background;
+		color: $body-font-color;
+	}
+
+	.menu-icon {
+		&::after {
+			background-color: $body-font-color;
+			box-shadow: 0 7px 0 $body-font-color, 0 14px 0 $body-font-color;
+		}
+	}
+
+	#menu-links {
+		li {
+
+			a {
+				&::after {
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+
+	.accordion-menu {
+		&> li.is-accordion-submenu-parent {
+			&> a {
+				&::after {
+					border-top-color: $body-background;
+				}
+			}
+
+			&:hover {
+				&> a {
+					&::after {
+						border-top-color: $body-font-color;
+					}
+				}
+			}
+		}
+	}
+
 }

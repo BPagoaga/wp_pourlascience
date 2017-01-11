@@ -49,6 +49,9 @@ span.amp {
 CSS3 GRADIENTS.
 *********************/
 /* @include css-gradient(#dfdfdf,#f8f8f8); */
+/*********************
+Responsive
+*********************/
 /**
  * Foundation for Sites by ZURB
  * Version 6.3.0
@@ -4433,10 +4436,12 @@ NAVIGATION STYLES
   #menu-links li a::after {
     margin-right: 10px; }
 
-.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after,
+.dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after {
   border-top-color: #f1f4fc; }
 
-.dropdown.menu > li.is-dropdown-submenu-parent:hover > a::after {
+.dropdown.menu > li.is-dropdown-submenu-parent:hover > a::after,
+.dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent:hover > a::after {
   border-top-color: #5473ae; }
 
 .menu-item {
@@ -4444,7 +4449,7 @@ NAVIGATION STYLES
   .menu-item > a {
     color: #f1f4fc;
     font-family: "Handlee", sans-serif;
-    font-size: 1.875rem; }
+    font-size: 1.5rem; }
     .menu-item > a:hover, .menu-item > a:active {
       color: #5473ae;
       background-color: #f1f4fc; }
@@ -4680,6 +4685,10 @@ FOOTER STYLES
 .footer {
   clear: both;
   margin-top: 1em; }
+  .footer #inner-footer {
+    border-top: 1px solid; }
+    .footer #inner-footer p {
+      margin-top: 1rem; }
 
 /*********************
 FOUNDATION STYLES
@@ -4690,6 +4699,24 @@ PLUGIN STYLES
 .gform_body ul {
   list-style: none outside none;
   margin: 0; }
+
+@media (max-width: 640px) {
+  figure {
+    display: none; }
+  h1 {
+    text-align: center; }
+  .title-bar {
+    background-color: #f1f4fc;
+    color: #5473ae; }
+  .menu-icon::after {
+    background-color: #5473ae;
+    box-shadow: 0 7px 0 #5473ae, 0 14px 0 #5473ae; }
+  #menu-links li a::after {
+    margin-right: 0px; }
+  .accordion-menu > li.is-accordion-submenu-parent > a::after {
+    border-top-color: #f1f4fc; }
+  .accordion-menu > li.is-accordion-submenu-parent:hover > a::after {
+    border-top-color: #5473ae; } }
 
 /******************************************************************
 
