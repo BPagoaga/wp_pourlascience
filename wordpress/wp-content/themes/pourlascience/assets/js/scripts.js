@@ -21,4 +21,9 @@ jQuery(document).ready(function() {
     }
   });
 
+  // custom scripts
+  jQuery('.menu-icon').click(function() {
+    jQuery(this).toggleClass('active');
+  });
+
 });

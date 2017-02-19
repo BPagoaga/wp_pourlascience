@@ -4,7 +4,7 @@
 	
 		<div id="inner-content" class="row">
 	
-		    <main id="main" class="large-8 medium-8 columns row" role="main">
+		    <main id="main" class="large-8 medium-8 small-12 columns row" role="main">
 
 		    	<h1>Les articles de la râterie Pour La Science</h1>
 		    

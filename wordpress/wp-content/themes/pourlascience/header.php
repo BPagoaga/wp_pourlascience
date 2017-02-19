@@ -49,7 +49,7 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-img.jpg">
 					</figure>
 					
-					<section class="brandname text-center"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></section>
+					<section class="brandname text-center small-10 medium-12 columns"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></section>
 					
 					<?php get_template_part( 'parts/nav', '' ); ?>
 	 	

@@ -10,6 +10,7 @@ GENERAL STYLES
 p {
 	color: $paragraph-font-color;
 	font-size: 0.875em;
+	text-align: justify;
 }
 
 /*********************
@@ -91,7 +92,6 @@ HEADER STYLES
 	padding: 15px 0;
 	font-family: 'Handlee', sans-serif;
 	color: $header-color;
-	min-width: 100%;
 }
     
 /*********************
@@ -658,16 +658,52 @@ PLUGIN STYLES
 		text-align: center;
 	}
 
+	.brandname {
+		order: 2;
+		font-size: 3rem;
+		display: flex;
+		align-items: center;
+	}
 
+	.nav {
+		order: 3;
+	}
+	
 	.title-bar {
 		background-color: $body-background;
 		color: $body-font-color;
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.menu-icon {
+		width: 3rem;
+		height: 38px;
+		order: 1;
+
+		&:hover {
+			&::after {
+				background-color: $body-font-color;
+				box-shadow: 0 14px 0 $body-font-color, 0 29px 0 $body-font-color;
+				height: 3px;
+			}
+		}
 		&::after {
 			background-color: $body-font-color;
-			box-shadow: 0 7px 0 $body-font-color, 0 14px 0 $body-font-color;
+			box-shadow: 0 14px 0 $body-font-color, 0 29px 0 $body-font-color;
+			height: 3px;
+		}
+
+		&:active,
+		&.active {
+			-webkit-transform: rotate(45deg);
+			-moz-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);
+
+			transition: all, 300ms, ease;
 		}
 	}
 
@@ -700,4 +736,7 @@ PLUGIN STYLES
 		}
 	}
 
+	.sidebar {
+		display: none;
+	}
 }
