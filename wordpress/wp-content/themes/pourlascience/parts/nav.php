@@ -3,11 +3,11 @@
   <div class="title-bar-title"></div>
 </div>
 
-<nav id="menu" role="navigation" class="nav medium-12 columns row">
-		<div class="small-12 medium-10">
+<nav id="menu" role="navigation" class="nav small-12 medium-12 columns row">
+		<div class="small-12 medium-9">
 			<?php primary_menu(); ?>
-		</div>
-		<div class="small-12 medium-2 align-right">
-			<?php links_menu(); ?>
-		</div>
+        </div>
+        <div class="small-12 medium-3 align-right">
+            <?php links_menu(); ?>
+        </div>
 </nav>

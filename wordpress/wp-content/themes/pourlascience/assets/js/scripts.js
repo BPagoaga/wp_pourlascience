@@ -1,3 +1,9 @@
+/**
+ * Created by PagoagaCarrie on 18/02/2017.
+ */
+$(document).ready(function(){
+    console.log('test')
+})
 jQuery(document).foundation();
 /*
 These functions make sure WordPress
@@ -19,11 +25,6 @@ jQuery(document).ready(function() {
     } else {
       jQuery(this).wrap("<div class='flex-video'/>");
     }
-  });
-
-  // custom scripts
-  jQuery('.menu-icon').click(function() {
-    jQuery(this).toggleClass('active');
   });
 
 });
