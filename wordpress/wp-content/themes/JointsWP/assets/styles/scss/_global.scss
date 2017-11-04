@@ -646,9 +646,10 @@ PLUGIN STYLES
 	}
 	.brandname {
 		order: 2;
-		font-size: 3rem;
+		font-size: 2rem;
 		display: flex;
 		align-items: center;
+		justify-content: center;
 	}
 	.nav {
 		order: 3;
