@@ -718,6 +718,9 @@ PLUGIN STYLES
 			display: none;
 		}
 	}
+	#meteor-slideshow {
+		width: 100% !important;
+	}
 }
 
 @include respond-to(xlarge) {
