@@ -42,13 +42,12 @@
 			<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
 			
 			<div class="off-canvas-content" data-off-canvas-content>
-				<div class="grid-container">
-					<header class="header grid-x" role="banner">
+					<header class="header row" role="banner">
 						<figure class="hero-img">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-img.jpg">
 						</figure>
 						
-						<section class="brandname text-center small-10 medium-12 cell"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></section>
+						<section class="brandname text-center small-10 medium-12 columns"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></section>
 						
 						<?php get_template_part( 'parts/nav', '' ); ?>
 		 	

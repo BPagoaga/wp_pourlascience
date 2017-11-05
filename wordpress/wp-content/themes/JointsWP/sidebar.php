@@ -4,10 +4,10 @@
  */
  ?>
 
-<div id="sidebar1" class="sidebar small-0 medium-12 align-right large-4 cell" role="complementary">
+<div id="sidebar1" class="sidebar small-0 medium-12 align-right large-4 columns" role="complementary">
 
 	<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
-    <div class="medium-12 cell">
+    <div class="medium-12 columns">
 		<?php dynamic_sidebar( 'sidebar1' ); ?>
     </div>
 	<?php else : ?>
