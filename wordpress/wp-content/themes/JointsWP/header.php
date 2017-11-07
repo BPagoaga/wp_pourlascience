@@ -29,7 +29,8 @@
 	    <?php } ?>
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
+		<link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/manifest.json">
+	
 		<?php wp_head(); ?>
 
 	</head>
